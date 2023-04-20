@@ -11,7 +11,7 @@ useEffect(() => {
   .then(res => {
     setCharacter(res.data);
   })
-})
+}, [])
 
 
   return (

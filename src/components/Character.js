@@ -3,7 +3,9 @@ import React from "react";
 
 const Character = ({character}) => {
   return (
-  character.map((item) => <div>{item.name}</div>)
+  character.map((item) => 
+  <div>{item.name}</div>
+  )
   )
 }
 
