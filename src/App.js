@@ -1,8 +1,16 @@
 import axios from 'axios';
 import React,{ useEffect, useState } from 'react';
 import Character from './components/Character';
+import styled from 'styled-components';
 
+const AppDiv = styled.div`
+  text-align: center;
+`
 
+const HeaderHOne = styled.h1`
+  color: #443e3e;
+  text-shadow: 1px 1px 5px #fff;
+`
 
 const App = () => {
 const [character, setCharacter] = useState([])
@@ -15,10 +23,11 @@ useEffect(() => {
 
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
-        <Character character={character}/>
-      </div>
+    <AppDiv>
+      <HeaderHOne>Characters</HeaderHOne>
+      <Character character={character}/>
+        
+    </AppDiv>
   );
 }
 
